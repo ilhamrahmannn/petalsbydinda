@@ -22,13 +22,89 @@
       </ul>
     </div>
   </div>
-
-  <div class="content">
-    <h1>BUNGA IS YOU</h1>
-    <div>
-      <button type="button">Explore</button>
+  <div class="hero">
+    <div class="container">
+      <div class="indicator">
+        <span class="btn active"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+      </div>
+      <div class="floral">
+      <div class="slider-row" id="slide">
+        <div class="slide-col">
+          <div class="user-img">
+            <img src="./images/hr1.jpg" alt="hr1">
+          </div>
+        </div>
+        <div class="slide-col">
+          <div class="user-img">
+            <img src="./images/hr2.jpg" alt="hr2">
+          </div>
+        </div>
+        <div class="slide-col">
+          <div class="user-img">
+            <img src="./images/hr3.jpg" alt="hr3">
+          </div>
+        </div>
+        <div class="slide-col">
+          <div class="user-img">
+            <img src="./images/hr4.jpg" alt="hr4">
+          </div>
+        </div>
+        <div class="slide-col">
+          <div class="user-img">
+            <img src="./images/hr5.jpg" alt="hr5">
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
+  </div>
+
+<script>
+  var btn = document.getElementsByClassName("btn")
+  var slide = document.getElementById("slide")
+
+  btn[0].onclick = function (){
+    slide.style.transform = "translateX(0px)";
+    for(i=0;i<4;i++){
+      btn[i].classList.remove("active");
+    }
+    this.classList.add("active")
+  }
+  btn[1].onclick = function (){
+    slide.style.transform = "translateX(-1000px)";
+    for(i=0;i<4;i++){
+      btn[i].classList.remove("active");
+    }
+    this.classList.add("active")
+  }
+  btn[2].onclick = function (){
+    slide.style.transform = "translateX(-2000px)";
+    for(i=0;i<4;i++){
+      btn[i].classList.remove("active");
+    }
+    this.classList.add("active")
+  }
+  btn[3].onclick = function (){
+    slide.style.transform = "translateX(-3000px)";
+    for(i=0;i<4;i++){
+      btn[i].classList.remove("active");
+    }
+    this.classList.add("active")
+  }
+  btn[4].onclick = function (){
+    slide.style.transform = "translateX(-4000px)";
+    for(i=0;i<4;i++){
+      btn[i].classList.remove("active");
+    }
+    this.classList.add("active")
+  }
+</script>
+
 </body>
 
 </html>
